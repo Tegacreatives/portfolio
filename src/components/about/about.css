@@ -1,0 +1,66 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 8rem;
+}
+
+.about-data {
+  display: grid;
+  column-gap: 5rem;
+  grid-template-columns: auto 30vw;
+}
+
+.about-info {
+  font-weight: 400;
+}
+
+.about-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.about-button {
+  align-items: center;
+  background-color: #000;
+  border-radius: 10rem;
+  color: #fff;
+  display: inline-flex;
+  height: 7rem;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  width: 7rem;
+  font-size: 1rem;
+  align-self: flex-end;
+  position: relative;
+  right: 23%;
+  transition: 0.2s ease-in-out;
+}
+
+.about-button:hover {
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 1.5rem;
+  }
+  .about-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+  }
+  .about-info {
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+  }
+  .about-button {
+    height: 5rem;
+    width: 5rem;
+    right: 70%;
+  }
+}

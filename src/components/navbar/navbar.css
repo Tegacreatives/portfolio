@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem 0 3rem;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  padding-left: 2rem;
+  list-style-type: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  ul {
+    display: none;
+  }
+}

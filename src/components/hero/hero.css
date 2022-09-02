@@ -1,0 +1,45 @@
+/* .hero {
+  padding: 3rem;
+}
+
+h2 {
+  line-height: 0.9;
+  font-weight: 700;
+  font-size: 14rem;
+  overflow: hidden;
+} */
+
+.hero {
+  padding: 1rem 3rem 3rem 8rem;
+}
+
+h2 {
+  line-height: 0.9;
+  font-weight: 700;
+  font-size: 12rem;
+  overflow: hidden;
+}
+
+h2 span {
+  display: inline-block;
+  transform: translateY(100%);
+  opacity: 0.1;
+}
+
+.middle {
+  padding-left: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 1.5rem;
+  }
+  h2 {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 800;
+  }
+  .middle {
+    padding-left: 0;
+  }
+}
