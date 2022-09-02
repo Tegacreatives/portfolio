@@ -1,20 +1,15 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby minimal starter
+  Tega Creatives V1
 </h1>
 
-## 🚀 Quick start
+## 🚀 Portfolio
 
-1.  **Create a Gatsby site.**
+1.  **This is the first version of my portfolio.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    Using gatsby(react), gsap for the animations, locomotive scroll for the smooth scroll.
 
     ```shell
-    # create a new Gatsby site using the minimal starter
+    # To create a similar site, use the following commands
     npm init gatsby
     ```
 
