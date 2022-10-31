@@ -1,22 +1,11 @@
-/* .hero {
-  padding: 3rem;
+.hero {
+  padding: 1rem 3rem 3rem 3rem;
 }
 
 h2 {
   line-height: 0.9;
   font-weight: 700;
   font-size: 14rem;
-  overflow: hidden;
-} */
-
-.hero {
-  padding: 1rem 3rem 3rem 8rem;
-}
-
-h2 {
-  line-height: 0.9;
-  font-weight: 700;
-  font-size: 12rem;
   overflow: hidden;
 }
 

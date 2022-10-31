@@ -7,7 +7,7 @@ import "../locomotiveScroll/locomotive-scroll.css";
 const Layout = ({ children, location }) => {
   return (
     <div>
-      <Scroll callbacks={location} />
+      {/* <Scroll callbacks={location} /> */}
       <Navbar />
       {children}
     </div>
