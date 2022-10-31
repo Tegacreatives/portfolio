@@ -1,46 +1,61 @@
 .featured-section{
-    padding: 3rem;
-}
-
-.section-container{
-    position: relative;
-    margin-left: 2.5rem;
-}
-
-.section-container .container {
-    max-width: 1360px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 4rem;
-}
-
-.section-container .container .figure {
-    height: 580px;
-    width: 800px;
+    padding: 2rem;
 }
 
 
-.section-container .container .figure .title {
-    font-size: 100px;
-    font-weight: 800;
-    line-height: 100px;
-    position: absolute;
-    color: #000;
-    bottom: 0;
-    left: 0;
-    transform: translate(5%, 50%);
-}
-
-.section-container .container .figure .label {
-    position: absolute;
-    top: 2%;
-    left: -2.5%;
-    transform: rotate(180deg);
-    writing-mode: vertical-rl;
-    text-align: right;
-    color: #000;
-}
-
-.section-container .container .figure .label .serial {
-    font-weight: 700;
-}
+@media screen and (min-width: 1080px) {
+    .section-container{
+        position: relative;
+        margin-left: 3.5rem;
+        margin-top: 4rem;
+    }
+    
+    .section-container .container {
+        max-width: 1360px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 15rem;
+    }
+    
+    .section-container .container .figure {
+        height: 480px;
+        width: 700px;
+    }
+    
+    .section-container:nth-child(odd) .container .figure {
+        transform: translate(-5%, -35%);
+    }
+    
+    .section-container:nth-child(even) .container .figure {
+        transform: translate(40%, -35%);
+    }
+    
+    
+    
+    .section-container .container .figure .title {
+        font-size: 100px;
+        font-weight: 800;
+        line-height: 100px;
+        position: absolute;
+        color: #EFFFFD;
+        bottom: 0;
+        left: 0;
+        mix-blend-mode: difference;
+        z-index: 9;
+        transform: translate(5%, 150%);
+    }
+    
+    .section-container .container .figure .label {
+        position: absolute;
+        top: 2%;
+        left: -6%;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        text-align: right;
+        color: #000;
+    }
+    
+    .section-container .container .figure .label .serial {
+        font-weight: 700;
+    }
+  }

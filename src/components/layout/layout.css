@@ -4,10 +4,11 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: #f9f2ed;
+  color: #100F0F;
   font-family: "DM Sans", sans-serif;
 }
 
 body {
-  background: #1a4d2e;
+  /* background: #f6eee3; */
+  background: #DFD3C3;
 }
