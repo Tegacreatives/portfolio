@@ -2,6 +2,45 @@
     padding: 3rem;
 }
 
-.project-items{
+.section-container{
+    position: relative;
+    margin-left: 2.5rem;
+}
+
+.section-container .container {
+    max-width: 1360px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 4rem;
+}
+
+.section-container .container .figure {
+    height: 580px;
+    width: 800px;
+}
+
+
+.section-container .container .figure .title {
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 100px;
+    position: absolute;
+    color: #000;
+    bottom: 0;
+    left: 0;
+    transform: translate(5%, 50%);
+}
+
+.section-container .container .figure .label {
+    position: absolute;
+    top: 2%;
+    left: -2.5%;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    text-align: right;
+    color: #000;
+}
+
+.section-container .container .figure .label .serial {
+    font-weight: 700;
 }
