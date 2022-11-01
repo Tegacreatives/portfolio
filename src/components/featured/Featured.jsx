@@ -45,6 +45,16 @@ const Featured = () => {
                 </div>
             </figure>
         </div>
+        <div className="mobile-container">
+        <figure class="mobile-figure">
+                <div class="img-placeholder"><img src={item.image} alt="" /></div>
+                <p class="title">{item.name}</p>
+                <div class="label">
+                    <div class="serial">No.1</div>
+                    <div class="text">Retro</div>
+                </div>
+            </figure>
+        </div>
     </section>
       ))
     }
