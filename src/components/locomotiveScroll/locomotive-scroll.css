@@ -43,7 +43,7 @@ html.has-scroll-dragging {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #f9f2ed;
+  background-color: #000;
   opacity: 0.5;
   width: 7px;
   border-radius: 10px;

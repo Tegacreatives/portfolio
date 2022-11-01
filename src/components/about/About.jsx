@@ -3,7 +3,7 @@ import "./about.css";
 
 const About = () => {
   return (
-    <div className="about" data-scroll-section>
+    <section className="about" data-scroll-section>
       <div className="about-data">
         <p className="about-info">
           Helping brands to stand out in the digital era. Together we will set
@@ -20,7 +20,7 @@ const About = () => {
       <a className="about-button" href="/contact">
         Contact me
       </a>
-    </div>
+    </section>
   );
 };
 

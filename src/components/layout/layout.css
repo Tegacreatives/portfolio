@@ -6,6 +6,7 @@
   text-decoration: none;
   color: #100F0F;
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {

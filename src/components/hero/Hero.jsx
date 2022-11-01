@@ -3,7 +3,7 @@ import "./hero.css";
 
 const Hero = () => {
   return (
-    <div className="hero" data-scroll-section>
+    <section className="hero" data-scroll-section>
       <h2>
         <span id="line">Creative</span>
       </h2>
@@ -13,7 +13,7 @@ const Hero = () => {
       <h2>
         <span id="line">Developer</span>
       </h2>
-    </div>
+    </section>
   );
 };
 

@@ -30,7 +30,7 @@ const workData = [
 ]
 
 const Featured = () => {
-  return <div className="featured-section" data-scroll-section>
+  return <section className="featured-section" data-scroll-section>
     <h1>Works</h1>
     {
       workData.map((item) => (
@@ -58,7 +58,7 @@ const Featured = () => {
     </section>
       ))
     }
-  </div>;
+  </section>;
 };
 
 export default Featured;
