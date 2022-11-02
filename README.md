@@ -15,7 +15,7 @@ You can visit the [sanity](https://www.sanity.io/docs/create-a-sanity-project?re
 I'll be updating the readme as I make more updates to the project.
 
 
-### WHat you need to Know
+### What you need to Know
 
 There are three branches in this repo, the main branch is the stable branch
 
