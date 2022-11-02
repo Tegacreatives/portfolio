@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { graphql } from "gatsby";
 import Layout from "../components/layout/Layout";
 import Hero from "../components/hero/Hero";
 import About from "../components/about/About";
@@ -6,7 +7,9 @@ import About from "../components/about/About";
 import { gsap } from "gsap";
 import Featured from "../components/featured/Featured";
 
-const IndexPage = () => {
+const IndexPage = ({data}) => {
+  const projectsData = data.allSanityPost.nodes
+  console.log(projectsData)
   useEffect(() => {
     const tl = gsap.timeline();
 
@@ -25,7 +28,7 @@ const IndexPage = () => {
     <Layout data-scroll-container>
       <Hero />
       <About />
-      <Featured />
+      <Featured projectsData={projectsData} />
     </Layout>
   );
 };
@@ -33,3 +36,19 @@ const IndexPage = () => {
 export default IndexPage;
 
 export const Head = () => <title>Tega Creatives</title>;
+
+export const query = graphql`
+  query MyQuery {
+    allSanityPost {
+      nodes {
+        title
+        brand
+        mainImage {
+          asset {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  }
+`;
