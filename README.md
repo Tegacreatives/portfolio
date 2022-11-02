@@ -13,3 +13,12 @@ If you plan on using this template for your own portfolio please make sure to go
 You can visit the [sanity](https://www.sanity.io/docs/create-a-sanity-project?ref=hero) documentation to know how it works.
 
 I'll be updating the readme as I make more updates to the project.
+
+
+### WHat you need to Know
+
+There are three branches in this repo, the main branch is the stable branch
+
+The work-section is where I make updates to the front-end section
+
+The sanity branch is where I make changes to my sanity studion CMS
