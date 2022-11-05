@@ -70,10 +70,9 @@
 
 @media screen and (max-width: 890px) {
     .featured-section{
-        padding: 1rem;
+        padding: 1rem 1rem 3rem 1rem;
     }
-    .section-container{
-        position: relative;
+    .section-container{  
         margin-left: 0;
         margin-top: 4rem;
     }
@@ -85,7 +84,7 @@
     }
     .mobile-figure{
         margin-left: 2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     .mobile-figure .img-placeholder{
         height: 300px;
@@ -99,13 +98,9 @@
         font-size: 40px;
         font-weight: 800;
         line-height: 100px;
-        position: absolute;
         color: #EFFFFD;
-        bottom: 0;
-        left: 2;
         mix-blend-mode: difference;
-        z-index: 9;
-        transform: translate(0%, 30%);
+        margin-top: 2%;
     }
     .mobile-container .mobile-figure .label {
         position: absolute;
