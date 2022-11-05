@@ -25,9 +25,9 @@
 
 .about-button {
   align-items: center;
-  background-color: #000;
+  background-color: #DDDDDD;
   border-radius: 10rem;
-  color: #fff;
+  color: #000;
   display: inline-flex;
   height: 7rem;
   justify-content: center;

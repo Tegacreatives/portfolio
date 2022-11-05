@@ -1,5 +1,6 @@
 .featured-section{
     padding: 2rem;
+    background: black;
 }
 
 .featured-title{
@@ -17,7 +18,6 @@
     max-width: 1360px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-bottom: 15rem;
 }
 
 .section-container .container .figure {

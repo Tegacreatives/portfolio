@@ -3,6 +3,7 @@ import Navbar from "../navbar/Navbar";
 import "./layout.css";
 import Scroll from "../locomotiveScroll/locomotiveScroll";
 import "../locomotiveScroll/locomotive-scroll.css";
+import Footer from "../footer/Footer";
 
 const Layout = ({ children, location }) => {
   return (
@@ -10,6 +11,7 @@ const Layout = ({ children, location }) => {
       {/* <Scroll callbacks={location} /> */}
       <Navbar />
       {children}
+      <Footer />
     </div>
   );
 };
