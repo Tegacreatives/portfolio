@@ -1,0 +1,106 @@
+.hamburger-menu{
+    display: none;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.secondary-background-color{
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.menu-layer{
+    position: relative;
+    background: red;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper{
+    position: relative;
+    padding: 0 3rem;
+}
+
+.menu-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+.menu-links nav{
+    display: block;
+}
+
+.menu-links nav ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-links nav ul li{
+    font-size: 6rem;
+    font-weight: 700;
+    cursor: pointer;
+    height: 135px;
+    overflow: hidden;
+    position: relative;
+    width: 700px;
+}
+
+.menu-links nav ul li a{
+    position: absolute;
+}
+
+.info{
+    width: 300px;
+}
+
+.info h3{
+    font-size: 1.2rem;
+    margin: 8px auto;
+}
+
+.info p{
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+.socials{
+    position: absolute;
+    bottom: -80px;
+    margin-top: 16px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.socials span{
+    cursor: pointer;
+    margin: 0 32px;
+    transition: .3s ease-in-out;
+    font-weight: 400;
+}
+
+.socials span :first-child{
+    margin-left: 64px;
+}
+
+.socials span:hover{
+    background: red;
+    padding: 8px 24px;
+}

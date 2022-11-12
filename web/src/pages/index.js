@@ -9,7 +9,6 @@ import Featured from "../components/featured/Featured";
 
 const IndexPage = ({data}) => {
   const projectsData = data.allSanityPost.nodes
-  console.log(projectsData)
   useEffect(() => {
     const tl = gsap.timeline();
 

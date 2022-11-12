@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem 3rem 0 3rem;
+  position: relative;
+  z-index: 10;
 }
 
 ul {
@@ -19,6 +21,13 @@ ul li {
 .logo {
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+.menu-open {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
 }
 
 @media screen and (max-width: 768px) {
