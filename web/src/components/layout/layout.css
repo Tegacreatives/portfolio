@@ -10,10 +10,14 @@
 }
 
 body {
-  /* background: #f6eee3; */
   background: #04293A;
+  transition: all 600ms ease-in-out;
 }
 
 body::-webkit-scrollbar{
   display: none;
+}
+
+.body-active{
+  background: #000;
 }

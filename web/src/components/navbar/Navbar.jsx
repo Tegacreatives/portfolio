@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import { RiMenu2Fill } from "react-icons/ri";
 import "./navbar.css";
 import Hamburger from "./hamburger";
 
@@ -56,7 +55,7 @@ const Navbar = () => {
         </ul>
         {/* mobile toogele navbar */}
         <button disabled={disabled} className="menu-open" onClick={handleMenu}>
-          <RiMenu2Fill size={25} />
+          Menu
         </button>
       </div>
       <Hamburger state={state} />

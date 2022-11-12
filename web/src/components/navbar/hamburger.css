@@ -1,3 +1,9 @@
+:root {
+    --ham-text: #faf0e6;
+    --bg-layer: #1B2430;
+    --bg-secondary: #faf0e6;
+  }
+
 .hamburger-menu{
     display: none;
     z-index: 9;
@@ -11,7 +17,7 @@
 }
 
 .secondary-background-color{
-    background-color: black;
+    background-color: var(--bg-secondary);
     top: 0;
     bottom: 0;
     left: 0;
@@ -24,7 +30,7 @@
 
 .menu-layer{
     position: relative;
-    background: red;
+    background: var(--bg-layer);
     height: 100%;
     overflow: hidden;
 }
@@ -65,6 +71,7 @@
 
 .menu-links nav ul li a{
     position: absolute;
+    color: var(--ham-text);
 }
 
 .info{
@@ -73,11 +80,13 @@
 
 .info h3{
     font-size: 1.2rem;
+    color: var(--ham-text);
     margin: 8px auto;
 }
 
 .info p{
     margin: 0 auto;
+    color: var(--ham-text);
     font-size: 0.8rem;
 }
 
@@ -87,9 +96,11 @@
     margin-top: 16px;
     font-size: .8rem;
     font-weight: 600;
+    color: var(--ham-text);
 }
 
 .socials span{
+    color: var(--ham-text);
     cursor: pointer;
     margin: 0 32px;
     transition: .3s ease-in-out;
@@ -101,6 +112,20 @@
 }
 
 .socials span:hover{
-    background: red;
+    background: #04293A;
     padding: 8px 24px;
 }
+
+
+@media screen and (max-width: 982px) {
+    .menu-links{
+        flex-direction: column;
+    }
+    .info{
+        display: none;
+    }
+    .menu-links nav{
+        margin-left: 50vw;
+    }
+     
+  }

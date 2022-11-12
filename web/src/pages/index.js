@@ -1,14 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { graphql } from "gatsby";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import Layout from "../components/layout/Layout";
 import Hero from "../components/hero/Hero";
 import About from "../components/about/About";
-
-import { gsap } from "gsap";
 import Featured from "../components/featured/Featured";
 
-const IndexPage = ({data}) => {
-  const projectsData = data.allSanityPost.nodes
+gsap.registerPlugin(ScrollTrigger);
+
+const IndexPage = ({ data }) => {
+  const projectsData = data.allSanityPost.nodes;
+
+  const textRef = useRef(null);
   useEffect(() => {
     const tl = gsap.timeline();
 
@@ -21,7 +26,26 @@ const IndexPage = ({data}) => {
       stagger: {
         amount: 0.3,
       },
+      scrollTrigger:  {
+        trigger: "#line",
+        toggleActions: "play pause resume reset"
+      }
     });
+
+    gsap.from(".about-info", {
+      duration: 1,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".about-info",
+        toggleActions: "play complete complete reset",
+      },
+    });
+
+    ScrollTrigger.create({
+      trigger: ".featured-section",
+      start: "top 80%",
+      toggleClass: { targets: "body", className: "body-active"},
+    })
   }, []);
   return (
     <Layout data-scroll-container>

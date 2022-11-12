@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 2rem 3rem 0 3rem;
   position: relative;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 ul {
@@ -24,10 +24,12 @@ ul li {
 }
 
 .menu-open {
+  font-size: 1.2rem;
   cursor: pointer;
   border: none;
   background: none;
   outline: none;
+  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {

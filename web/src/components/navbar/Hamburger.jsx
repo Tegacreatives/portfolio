@@ -14,7 +14,6 @@ const Hamburger = ({ state }) => {
   let line3 = useRef(null);
   let info = useRef(null);
 
-  console.log(state);
   useEffect(() => {
     if (state.clicked === false) {
       // close menu
@@ -50,6 +49,7 @@ const Hamburger = ({ state }) => {
     }
   }, [state]);
 
+  //reveal menu background colors
   const staggerReveal = (node1, node2) => {
     gsap.from([node1, node2], {
       duration: 0.8,
@@ -63,6 +63,7 @@ const Hamburger = ({ state }) => {
     });
   };
 
+  //reveal menu links
   const staggerText = (node1, node2, node3) => {
     gsap.from([node1, node2, node3], {
       duration: 0.8,
@@ -75,6 +76,7 @@ const Hamburger = ({ state }) => {
     });
   };
 
+  //reveal menu info
   const fadeInUp = (node) => {
     gsap.from(node, {
       y: 60,
@@ -85,6 +87,7 @@ const Hamburger = ({ state }) => {
     });
   };
 
+  //links hover animation
   const hoverHandler = (e) => {
     gsap.to(e.target, {
       duration: 0.3,
@@ -93,6 +96,8 @@ const Hamburger = ({ state }) => {
       ease: "power.inOut",
     });
   };
+
+  //links exit hover animation
   const hoverExitHandler = (e) => {
     gsap.to(e.target, {
       duration: 0.3,
