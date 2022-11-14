@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect} from "react";
 import { graphql } from "gatsby";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -12,8 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const IndexPage = ({ data }) => {
   const projectsData = data.allSanityPost.nodes;
-
-  const textRef = useRef(null);
   useEffect(() => {
     const tl = gsap.timeline();
 
