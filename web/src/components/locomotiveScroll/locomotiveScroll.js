@@ -1,13 +1,9 @@
 import { useEffect } from "react";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 // We are excluding this from loading at build time in gatsby-node.js
 import LocomotiveScroll from "locomotive-scroll";
 
 import { scroll } from "../../theme";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Scroll = (callbacks) => {
   useEffect(() => {
@@ -24,7 +20,6 @@ const Scroll = (callbacks) => {
     locomotiveScroll.on("scroll", (func) => {
       // Update `data-direction` with scroll direction.
       document.documentElement.setAttribute("data-direction", func.direction);
-      ScrollTrigger.update();
     });
 
     return () => {

@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "./hamburger.css";
 
-const Hamburger = ({ state }) => {
+const Hamburger = ({ state, handleMenu, disabled }) => {
   //varaibles fot animating dom nodes
   let menu = useRef(null);
   let revealMenu = useRef(null);
@@ -116,6 +116,13 @@ const Hamburger = ({ state }) => {
         <div className="menu-city-background"></div>
         <div className="container">
           <div className="wrapper">
+            <button
+              className="menu-close"
+              disabled={disabled}
+              onClick={handleMenu}
+            >
+              Close
+            </button>
             <div className="menu-links">
               <nav>
                 <ul>
@@ -162,9 +169,33 @@ const Hamburger = ({ state }) => {
               </div>
               <div className="socials">
                 Socials:
-                <span>Twitter</span>
-                <span>Instagram</span>
-                <span>Facebook</span>
+                <span>
+                  <a
+                    href="https://twitter.com/tegacreatives"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Twitter
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://instagram.com/tegacreatives"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
+                </span>
+                <span>
+                  <a
+                    href="https://github.com/Tegacreatives"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Github
+                  </a>
+                </span>
               </div>
             </div>
           </div>

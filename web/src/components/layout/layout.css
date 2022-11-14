@@ -12,6 +12,7 @@
 body {
   background: #04293A;
   transition: all 600ms ease-in-out;
+  overflow: auto;
 }
 
 body::-webkit-scrollbar{

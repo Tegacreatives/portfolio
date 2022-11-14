@@ -58,7 +58,7 @@ const Navbar = () => {
           Menu
         </button>
       </div>
-      <Hamburger state={state} />
+      <Hamburger state={state} handleMenu={handleMenu} disabled={disabled} />
     </div>
   );
 };
