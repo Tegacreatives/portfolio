@@ -99,7 +99,7 @@
 .info p {
   margin: 0 auto;
   color: var(--ham-text);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .socials {

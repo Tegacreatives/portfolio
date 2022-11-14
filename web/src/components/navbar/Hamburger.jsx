@@ -156,15 +156,13 @@ const Hamburger = ({ state, handleMenu, disabled }) => {
                 </ul>
               </nav>
               <div ref={(el) => (info = el)} className="info">
-                <h3>Our Promise</h3>
+                <h3>My Technologies</h3>
                 <p className="text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quaerat debitis provident doloribus incidunt? Repellat
-                  mollitia est porro possimus quos placeat aspernatur optio
-                  vitae reprehenderit inventore itaque veritatis sequi tenetur
-                  corporis facilis qui id quas, ab cumque, consequatur nemo
-                  tempora. Unde quod beatae consectetur nihil fugit voluptatibus
-                  vitae impedit officia cupiditate!
+                  My development technologies include JavaScript, React,
+                  Next.js, Gatsby.js, TailwindCss for the front-end and on the
+                  backend I maily use a headless Content Manangement System, I
+                  maily work with Sanity.io and Strapi and when required I can
+                  build a custom backend system using Node and Express!
                 </p>
               </div>
               <div className="socials">
