@@ -137,18 +137,25 @@
     flex-direction: column;
     top: 60px;
   }
+  .menu-links nav ul li {
+    font-size: 4rem;
+  }
   .info {
     display: none;
   }
   .menu-links nav {
-    margin-left: 50vw;
+    margin-left: 70vw;
   }
 
   .menu-close{
     left: 70vw;
   }
   .socials span {
-    margin: 0 2px;
+    margin: 1px;
+  }
+
+  .socials span :first-child {
+    margin-left: 50px;
   }
   .socials span a:hover {
     background: #04293a;
