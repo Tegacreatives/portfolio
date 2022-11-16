@@ -22,7 +22,12 @@
 .section-container .container .figure {
     height: 500px;
     width: 60vw;
-    /* background: red; */
+
+}
+
+.figure .img-placeholder{
+    max-height: 400px;
+    max-width: 50vw;
 }
 
 .section-container:nth-child(odd) .container .figure {
